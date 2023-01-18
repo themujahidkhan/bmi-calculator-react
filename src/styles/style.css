@@ -7,13 +7,15 @@
 .App {
   height: 100vh;
   width: 100vw;
-  text-align: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bmi-form {
   text-align: center;
+  width: max-content;
+  margin: 2rem;
 }
 
 form {
@@ -61,4 +63,23 @@ input[type="number"] {
   font-size: 1rem;
   padding: 0.5rem;
   cursor: pointer;
+}
+
+.table-header {
+  display: flex;
+
+  gap: 4rem;
+  margin: 1rem;
+  color: red;
+}
+
+.table-data {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+  /* justify-content: space-around; */
+}
+
+.table-data div > p {
+  margin: 1rem 0;
 }

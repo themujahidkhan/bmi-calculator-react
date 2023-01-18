@@ -49,7 +49,9 @@ function CALCULATOR() {
           </div>
         </form>
         {result && (
-          <div className="result-wrapper">{`Your BMI is: ${result}`}</div>
+          <div className="result-wrapper">
+            <h1>{`Your BMI is: ${result}`}</h1>
+          </div>
         )}
       </div>
     </>
